@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://JAVA.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" 
+version="3.0">
+  <display-name>learningspringmvc</display-name>
+  <welcome-file-list>
+    <welcome-file>/views/testPageBar.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>submitAR</servlet-name>
+  	<servlet-class>com.alumnirecords.LeaveRecordsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>submitAR</servlet-name>
+	<url-pattern>/submitar</url-pattern>
+  </servlet-mapping>
+  <filter>
+  	<filter-name>encodingFilter</filter-name>
+  	<filter-class>com.filters.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>encodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>managerFilter</filter-name>
+  	<filter-class>com.filters.ManagerFilter</filter-class>
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>/alumnirecordsviews/manager/managerLogin.jsp</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>managerFilter</filter-name>
+  	<url-pattern>/alumnirecordsviews/manager/*</url-pattern>
+  </filter-mapping>
+</web-app>

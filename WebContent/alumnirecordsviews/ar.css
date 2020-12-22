@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0; list-style:none; outline:none; border:0; background:none;}
+body{font-family:"仿宋"; font-size:14px; }
+a:link,a:visited{ text-decoration:none; color:#fff; font-size:16px;}
+/* banner */
+#banner{
+	width:980px; 
+	margin:0 200px;
+	
+}
+/* content */
+#content{
+	width:830px; 
+	height:934px; 
+	background:url(../images/content_bg.jpg) no-repeat; 
+	margin:0 auto; 
+	padding-left:150px;
+}
+.step{
+	width:454px; 
+	height:90px; 
+	font-size:30px; 
+	font-weight:100; 
+	color:#dd8787; 
+	background:url(../images/step.jpg) center right no-repeat; 
+	line-height:80px;
+}
+h3{
+	width:444px; 
+	height:60px; 
+	font-size:20px; 
+	font-weight:100; 
+	color:#dd8787; 
+	line-height:85px; 
+	border-bottom:1px solid #dd8787;
+}
+td{ 
+	height:50px; 
+	color:#dd8787;
+}
+.left{
+	width:120px; 
+	text-align:right;
+}
+.right{
+	width:320px; 
+	height:28px; 
+	border:1px solid #dd8787;
+}
+input{vertical-align:middle;}
+select{
+	width:171px; 
+	border:1px solid #dd8787; 
+	color:#dd8787;
+}
+textarea{
+	width:300px; 
+	border:1px solid #dd8787; 
+	resize:none; 
+	font-size:12px; 
+	color:#aaa; 
+	padding:20px;
+}
+.last{
+	width:90px; 
+	height:30px; 
+	background: #F99 right center no-repeat;
+	cursor:pointer;
+}
+
+
